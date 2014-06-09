@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  form#formAddMsg(name="add", method="post", action="/add")
+    input#inputMsg.col-xs-4(type="text", placeholder="Type your message here..", name="message")
+    br
+    br
+    button#btnSubmit.btn.btn-primary(type="submit") Submit

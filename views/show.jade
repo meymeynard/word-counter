@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h2 List of data from database
+    each obj, n in data
+        p Message: #{obj.message} 
+        p Word count: #{obj.count}
+    
+    form(action='/')
+        button(type='submit') Return to home
